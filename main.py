@@ -22,7 +22,7 @@ def Hit_Clicks(url):
 	chrome_options.add_argument('--disable-dev-shm-usage')
 	chrome_options.add_argument("--disable-notifications")
 
-	driver = webdriver.Chrome(chrome_options=chrome_options)
+	driver = webdriver.Chrome(options=chrome_options)
 	driver.get(url)
 
 	main_window = driver.current_window_handle
